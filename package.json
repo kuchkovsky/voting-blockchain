@@ -1,0 +1,17 @@
+{
+  "name": "voting-blockchain",
+  "version": "1.0.0",
+  "description": "Voting Blockchain App",
+  "main": "src/js/index.js",
+  "scripts": {
+    "gen-abi": "node_modules/.bin/solcjs --bin --abi Voting.sol",
+    "start": "node_modules/.bin/ganache-cli",
+    "deploy": "node deploy.js"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "ganache-cli": "^6.4.3",
+    "solc": "^0.5.3",
+    "web3": "^1.0.0-beta.37"
+  }
+}
